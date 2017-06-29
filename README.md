@@ -1,6 +1,7 @@
 # sequelize
 
 [![CircleCI](https://img.shields.io/circleci/project/github/zcong1993/sequelize-koa2.svg?style=flat-square)](https://circleci.com/gh/zcong1993/sequelize-koa2)
+[![Build Status](https://travis-ci.org/zcong1993/sequelize-koa2.svg?branch=master)](https://travis-ci.org/zcong1993/sequelize-koa2)
 
 > koa2 sequelize demo with associate migration, faker data seeders and mocha test in circleci
 
