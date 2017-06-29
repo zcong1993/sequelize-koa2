@@ -39,7 +39,7 @@ jobs:
             PORT: 3000
             NODE_ENV: test
           command: |
-            npm install sequelize-cli -g
-            sequelize db:migrate
-            sequelize db:seed:all
+            npm install sequelize-cli
+            ./node_modules/.bin/sequelize db:migrate
+            ./node_modules/.bin/sequelize db:seed:all
             npm run test
