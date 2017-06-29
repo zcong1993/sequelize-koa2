@@ -26,7 +26,7 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-wee
-          command: npm install
+          command: npm install --silent
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
@@ -39,7 +39,7 @@ jobs:
             PORT: 3000
             NODE_ENV: test
           command: |
-            npm install sequelize-cli
+            npm install sequelize-cli --silent
             ./node_modules/.bin/sequelize db:migrate
             ./node_modules/.bin/sequelize db:seed:all
             npm run test
