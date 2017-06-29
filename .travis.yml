@@ -6,12 +6,12 @@ services:
 env:
   global:
     - DB_USER=root
-    - DB_NAME=sequelize-koa
+    - DB_NAME=sequelize
     - PORT=3000
     - NODE_ENV=test
 
 before_install:
-  - mysql -e 'CREATE DATABASE sequelize-koa;'
+  - mysql -e 'CREATE DATABASE sequelize;'
 
 install:
   - npm install
